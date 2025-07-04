@@ -2,7 +2,7 @@ import { supabase } from '@/lib/supabase'
 import Image from 'next/image'
 import MessageSellerForm from "../../../components/message-seller-form";
 
-export default async function ListingPage({ params }: { params: { id: string } }) {
+export default async function ListingPage({ params }: any) {
   const { data: listing, error } = await supabase
     .from('listings')
     .select('*')

@@ -112,7 +112,7 @@ export function Component({ listings, currentCategory, currentQuery }: { listing
 }
 
 
-function SearchIcon(props) {
+function SearchIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -133,7 +133,7 @@ function SearchIcon(props) {
 }
 
 
-function StoreIcon(props) {
+function StoreIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

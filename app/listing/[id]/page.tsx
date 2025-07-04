@@ -2,6 +2,7 @@ import { supabase } from '@/lib/supabase'
 import Image from 'next/image'
 import MessageSellerForm from "../../../components/message-seller-form";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function ListingPage({ params }: any) {
   const { data: listing, error } = await supabase
     .from('listings')

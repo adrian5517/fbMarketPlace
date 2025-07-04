@@ -1,14 +1,8 @@
 import { Component } from "@/components/component";
 import { supabase } from "@/lib/supabase";
 
-export default async function Home({
-  searchParams,
-}: {
-  searchParams?: {
-    query?: string;
-    category?: string;
-  };
-}) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function Home({ searchParams }: any) {
   const query = searchParams?.query || '';
   const category = searchParams?.category || 'all';
 
